@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2fd, #f5f5f5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1976d2;
+}
+
+h2 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+/* Header section (username + logout) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #555;
+}
+
+hr {
+    margin: 10px 0 15px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1976d2;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #125aa0;
+}
+
+/* Logout button */
+#logoutBtn {
+    background: #e53935;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+#logoutBtn:hover {
+    background: #c62828;
+}
+
+/* Expense list */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete button */
+.delete {
+    background: #ff5252;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.delete:hover {
+    background: #e53935;
+}
+
+/* Total */
+#total {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message text */
+#message {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #e53935;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+}
