@@ -25,8 +25,8 @@ app.use(
 app.use(express.static(path.join(__dirname)));
 
 // Data files
-const USERS_FILE = path.join(__dirname, "data", "users.json");
-const EXPENSES_FILE = path.join(__dirname, "data", "expenses.json");
+const USERS_FILE = path.join(__dirname, "users.json");
+const EXPENSES_FILE = path.join(__dirname, "expenses.json");
 
 // ---------- Helper Functions ----------
 
